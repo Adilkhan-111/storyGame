@@ -7,7 +7,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour, IInteractableRaw, IInteractableEaten
 {
-    
+    public TextMeshProUGUI GoWorkText;
+    public TextMeshProUGUI BreakfastText;
     public GameObject RawBreakfast;
     public GameObject ReadyBreakfast;
     public GameObject EatenBreakfast;
@@ -32,17 +33,7 @@ public class GameManager : MonoBehaviour, IInteractableRaw, IInteractableEaten
             InteractText.gameObject.SetActive(false);
         
     }
-    /*public void PressE_ready(bool istrue)
-    {
-        if (istrue)
-        {
-            
-            InteractText.gameObject.SetActive(true);
-        }
-        else
-            InteractText.gameObject.SetActive(false);
-
-    }*/
+    
 
     public void InteractRaw()
     {
@@ -54,6 +45,8 @@ public class GameManager : MonoBehaviour, IInteractableRaw, IInteractableEaten
     {
         ReadyBreakfast.SetActive(false);
         EatenBreakfast.SetActive(true);
+        BreakfastText.gameObject.SetActive(false);
+        GoWorkText.gameObject.SetActive(true);
     }
     
 }

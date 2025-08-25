@@ -12,10 +12,5 @@ public class EventManager : MonoBehaviour
         InteractionRaw?.Invoke(isCooked);
     }
 
-    public static event Action<bool> InteractionReady;
-
-    public static void OnInteractionReady(bool isEaten)
-    {
-        InteractionRaw?.Invoke(isEaten);
-    }
+    
 }

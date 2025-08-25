@@ -23,7 +23,13 @@ public class Interactor : MonoBehaviour
         Ray r = new Ray(InteracterSource.position, InteracterSource.forward);
         if (Physics.Raycast(r, out RaycastHit hitInfo, InteractRange))
         {
-                
+            switch (hitInfo.collider.tag)
+            {
+                case "RawBreakfast":
+                    break;
+                case "ReadyBreakfast":
+                    break;
+            }    
             if (hitInfo.collider.tag == "RawBreakfast")
             {
                 EventManager.OnInteractionRaw(true);
