@@ -6,6 +6,10 @@ interface IInteractableRaw
 {
     public void InteractRaw();
 }
+interface IInteractableEaten
+{
+    public void InteractEat();
+}
 public class Interactor : MonoBehaviour
 {
     public Transform InteracterSource;
@@ -27,11 +31,17 @@ public class Interactor : MonoBehaviour
                 {
                     GameManager.TryGetComponent(out IInteractableRaw gamemanager);
                     gamemanager.InteractRaw();
+                    
                 }
             }
             else if (hitInfo.collider.tag == "ReadyBreakfast")
             {
-                EventManager.OnInteractionReady(true);
+                EventManager.OnInteractionRaw(true);
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    GameManager.TryGetComponent(out IInteractableEaten gamemanagerEaten);
+                    gamemanagerEaten.InteractEat();
+                }
             }
             else
             {

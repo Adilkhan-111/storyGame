@@ -1256,7 +1256,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 40.654663, w: 0.7657318}
+  m_margin: {x: 0, y: 0, z: -44.077087, w: 0.7657318}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1316,7 +1316,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 29.3, y: 122.6}
+  m_AnchoredPosition: {x: 29.3, y: 161.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &827063631
@@ -1582,6 +1582,12 @@ Transform:
   - {fileID: 5146307635904077162}
   m_Father: {fileID: 1250441785843608968}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1034735715 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 345896873270589, guid: ad906fa54476771459cb5ce3c4cb1d00,
+    type: 3}
+  m_PrefabInstance: {fileID: 835443778}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1037065422 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4656707702405323263, guid: b356944ed71644d43ab91fd2c4e65aac,
@@ -1791,6 +1797,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RawBreakfast: {fileID: 1798650871}
   ReadyBreakfast: {fileID: 659593867}
+  EatenBreakfast: {fileID: 1034735715}
   InteractText: {fileID: 755586859}
 --- !u!1 &1464759405
 GameObject:

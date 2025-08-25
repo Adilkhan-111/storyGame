@@ -5,11 +5,12 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour, IInteractableRaw
+public class GameManager : MonoBehaviour, IInteractableRaw, IInteractableEaten
 {
     
     public GameObject RawBreakfast;
     public GameObject ReadyBreakfast;
+    public GameObject EatenBreakfast;
     public TextMeshProUGUI InteractText;
     private void Awake()
     {
@@ -48,6 +49,11 @@ public class GameManager : MonoBehaviour, IInteractableRaw
         RawBreakfast.SetActive(false);        
         ReadyBreakfast.SetActive(true);
         InteractText.text = "Press E to eat *food on the table*";
+    }
+    public void InteractEat()
+    {
+        ReadyBreakfast.SetActive(false);
+        EatenBreakfast.SetActive(true);
     }
     
 }
