@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour, IInteractableRaw, IInteractableEaten
     public GameObject RawBreakfast;
     public GameObject ReadyBreakfast;
     public GameObject EatenBreakfast;
-
+    public bool canPlayerGo;
     public GameObject Door;
     private void Awake()
     {
@@ -51,6 +51,7 @@ public class GameManager : MonoBehaviour, IInteractableRaw, IInteractableEaten
         EatenBreakfast.SetActive(true);
         BreakfastText.gameObject.SetActive(false);
         GoWorkText.gameObject.SetActive(true);
+        canPlayerGo = true;
     }
 
     
