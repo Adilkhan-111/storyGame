@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Home.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/Bus.unity
+    path: Assets/Scenes/MetroStation.unity
     guid: 5befc2c89f5ff48449537bc2f68ffde1
+  - enabled: 1
+    path: Assets/Scenes/Work.unity
+    guid: 0ea60aae7e1048b439e08481adb98c72
   m_configObjects: {}
