@@ -5,6 +5,7 @@ using UnityEngine;
 public class OpenDoor : MonoBehaviour
 {
     private Animator localAnim;
+    public Animator HandAnim;
     private void Start()
     {
         localAnim = GetComponent<Animator>();
@@ -12,6 +13,6 @@ public class OpenDoor : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         localAnim.SetTrigger("Open");
-
+        HandAnim.SetTrigger("Hide");
     }
 }
